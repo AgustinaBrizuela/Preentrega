@@ -325,9 +325,7 @@ a.emailcontacto
   }
 
  /*Estilo formulario contacto*/
- /*La idea sería mejorarlo con flexbox o gribs pero para el desafío no se podía usar*/
-
-
+ 
  .Contactanos {
     text-align: center;
     font-size: 3em;
