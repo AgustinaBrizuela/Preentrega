@@ -74,16 +74,17 @@ nav
 }
 #infobodega
     {
-    color: rgb(7, 5, 7);
+    color: rgb(8, 3, 8);
     font-size: 1rem;
     padding: 2rem; 
     border-top: solid 0.1rem rgb(73, 21, 94);
+    border-bottom: solid 0.1rem rgb(73, 21, 94);
+    padding: 0.5rem;
     
     }
     #imagenhome
     {
-       
-        height: 30rem;
+         height: 29rem;
     }
 
 /* estilo redes sociales*/ 
@@ -94,14 +95,14 @@ nav
     justify-content: center;
     background-image: url(..//Imágenes/Fotos/uvasredes.png);
     background-repeat: repeat;
-    background-size: 400px;
+    background-size: 410px;
     }
 .redessociales h2
     {
     color:rgb(70, 17, 57);
     font-size: 1.4rem;
     font-weight: bold;
-    padding: 0.2rem;
+    padding: 0.1rem;
     position: relative;
     }
 
@@ -111,8 +112,8 @@ nav
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 1.5rem;
-    padding: 1rem;
+    gap: 1rem;
+    padding-bottom: 1rem;
     list-style: none;
     width: 100%;
     max-width: 200px;
@@ -142,7 +143,7 @@ nav
 .redessociales h2
 {
 animation-name: left-in;
-animation-duration: 4s;
+animation-duration: 5s;
 }
 /* estilo footer del index*/
 
@@ -153,7 +154,7 @@ animation-duration: 4s;
     justify-content: center;
     align-items: center;
     font-style: italic;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
    
     }
 .linkhome
@@ -162,54 +163,12 @@ animation-duration: 4s;
     color: purple;
     font-weight: bold;
 }
+#h3home
+{
+    padding-top: 0.3rem;
+    font-size: 1rem;
+}
 
-
-
- /*Vista Mobile*/
-/*
- @media (max-width: 390px) 
- {
- body 
- {
-    background-color: #E2D6FF;
-    padding: 90px 20px;
- }
- 
- header nav
-
- {
-     width: 80%;
-     height: 100%;
-     margin: 0;
-     position: fixed;
-    
- }
- header nav ul {
-     display: block;
- };
- 
- 
- .menuburguer
- {
-     display: inline;
-     width: 1px;
- }
- 
- .fotohome 
- {
-     
-     display: none;
-     
- }
- .logo
- {
-     height: 5rem;
-     margin-left: 45%;
-     margin-bottom: 1rem;
- }
- 
- }
-*/
     /*Estilo de page Historia.html*/
 
 .h1historia
