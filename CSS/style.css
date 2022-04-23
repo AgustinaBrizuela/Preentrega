@@ -55,13 +55,10 @@ nav
     }
 
 .menu{
-        display: flex;
-        flex-direction:row;
+      
         justify-content: space-between;
         list-style: none;
         font-size: 1.5rem;
-        margin-right: 0.2rem;
-        
         height:auto;
         padding: 0.5rem;
     }
@@ -69,39 +66,15 @@ nav
     nav li :hover
     {
         
-        transform: scale(1.1);
+        transform: scale(1.09);
         transition: color, background-color, transform 0.3s ease-in;
 
     }
     
-    #menub{
-    display:none;
-    margin-left: 5px;
-    }
-
-    .menuburger {
-        box-sizing: border-box;
-        display: none;
-        border: 1px solid black;
-        border-radius: 5px;
-        width: 40px;
-        height: 40px;
-        line-height: 40px;
-        font-weight: bold;
-        text-align: center;
-        user-select: none;
-      }
-      
-     
-    .menu button{
-        margin:10px;
-        border-radius: 5rem;
-        border: 0.2rem solid rgba(37, 10, 39, 0.644);
-    }
-
+    
     nav li a:hover
     {
-    background-color: rgb(238, 222, 247);
+    background-color: rgb(25, 2, 39);
     
     }
    
@@ -110,9 +83,7 @@ nav
     text-decoration: none;
     color: rgba(15, 4, 15, 0.644);
     font-weight: bold;
-    padding: 0.1rem;
-    margin-top: 0.2rem;
-    border-radius: 30px;
+    border-radius: 25px;
    
     }
 
