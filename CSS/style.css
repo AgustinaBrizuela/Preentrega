@@ -132,7 +132,7 @@ nav
         transition: color, background-color, transform 0.4s ease-in;
     }
 
-/*Animación del footer*/
+/*Animación del redes*/
 
 @keyframes left-in {
 0%
@@ -151,7 +151,7 @@ nav
 animation-name: left-in;
 animation-duration: 5s;
 }
-/* estilo footer del index*/
+/* estilo footer*/
 
 .homefooter
     {
