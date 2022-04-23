@@ -1,0 +1,593 @@
+/*tipografía para todo el documento*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+/*Eliminamos los márgenes y paddings del navegador por defecto*/
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    padding: 0%;
+    }
+    
+    *,
+    *::after,
+    *::before{
+    box-sizing: inherit;
+    }
+
+  /*Color del cuerpo de la página*/
+
+body 
+{
+   background-image: linear-gradient(to right, rgb(56, 42, 54),rgb(216, 174, 216));
+
+}
+
+/*Menú de navegación*/
+
+.fotohome 
+{
+    height: 30vh;
+    width: 100%;
+    margin:auto;
+       
+}
+.menuburguer
+{
+    display: none;
+}
+.logo
+{
+    height: 3.3rem;
+    border-radius: 20px;
+          
+}
+
+nav
+    {
+    padding: 1.5rem;
+    font-weight: bold;
+    font-style: normal;
+    padding-bottom: 0.1rem;
+    width: 100%;
+    
+    }
+
+.menu{
+        display: flex;
+        flex-direction:row;
+        justify-content: space-between;
+        list-style: none;
+        font-size: 1.5rem;
+        margin-right: 0.2rem;
+        margin-top: 0.2rem;
+        height:auto;
+        padding: 0.5rem;
+    }
+    .menu :hover
+    {
+        
+        transform: scale(1.5);
+        transition: color, background-color, transform 1s ease-in;
+
+    }
+    
+    #menub{
+    display:none;
+    margin-left: 5px;
+    }
+
+    .menuburger {
+        box-sizing: border-box;
+        display: none;
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-weight: bold;
+        text-align: center;
+        user-select: none;
+      }
+      
+     
+    .menu button{
+        margin:10px;
+        border-radius: 5rem;
+        border: 0.2rem solid rgba(37, 10, 39, 0.644);
+    }
+
+    nav li a:hover
+    {
+    background-color: rgb(238, 222, 247);
+    
+    }
+   
+    nav ul a   
+    {
+    text-decoration: none;
+    color: rgba(15, 4, 15, 0.644);
+    font-weight: bold;
+    padding: 0.1rem;
+    margin-top: 0.2rem;
+    border-radius: 30px;
+   
+    }
+
+  /*Vista escritorio*/
+/*estilo información e imágenes de la bodega*/
+
+.h1home
+{
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+div.homeinfo
+    {
+    margin: 0;
+    border-top: 0.1rem;
+    border-bottom: 0.2rem;
+    display: grid;
+    grid-template-rows: 50% repeat(2);
+    grid-template-columns: 100%;
+    justify-items: center;
+    width: auto;
+    }
+  
+.suelos
+    {
+    color: rgb(7, 5, 7);
+    font-size: 1rem;
+    font-weight: bold; 
+    padding: 2rem; 
+    grid-area: info;
+    }
+
+
+.imagenes
+{
+grid-area: imagenes;
+display:flex;
+flex-direction: row;
+flex-wrap: wrap;
+gap: 1rem;
+}
+.imagen1{
+    transition: transform 0.5s ease-in;
+}
+.imagen1:hover
+{
+transform: scale(1.2);
+box-shadow: 0 0 3rem black;
+}
+.imagen2{
+    transition: transform 0.5s ease-in;
+}
+.imagen2:hover
+{
+transform: scale(1.2);
+box-shadow: 0 0 3rem black;
+}
+
+div.homeinfo
+
+{
+    display: grid;
+    grid-template-areas: "info" "imagenes";
+}
+/* estilo redes sociales*/ 
+
+.redessociales
+    {
+    text-align: center;
+    justify-content: center;
+    background-image: url(..//Imágenes/Fotos/uvasredes.png);
+    background-repeat: repeat;
+    background-size: 400px;
+    }
+.redessociales h2
+    {
+    color:rgb(70, 17, 57);
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 0.2rem;
+    position: relative;
+    }
+
+.iconosredes
+    {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1rem;
+    list-style: none;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+     }
+.iconosredes :hover
+    {
+        background-color: rgb(216, 210, 215);
+        transform: scale(1.5);
+        transition: color, background-color, transform 1s ease-in;
+    }
+
+/*Animación del footer*/
+
+@keyframes left-in {
+0%
+    {
+        left: -100%;
+        color: rgb(19, 19, 104);
+    }
+100% {
+        left: 0;
+        color:rgb(70, 17, 57)
+    }
+}
+
+.redessociales h2
+{
+animation-name: left-in;
+animation-duration: 4s;
+}
+/* estilo footer del index*/
+
+.homefooter
+    {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    font-size: 0.7rem;
+   
+    }
+.linkhome
+{
+    text-decoration: none;
+    color: purple;
+    font-weight: bold;
+}
+
+
+
+ /*Vista Mobile*/
+/*
+ @media (max-width: 390px) 
+ {
+ body 
+ {
+    background-color: #E2D6FF;
+    padding: 90px 20px;
+ }
+ 
+ header nav
+
+ {
+     width: 80%;
+     height: 100%;
+     margin: 0;
+     position: fixed;
+    
+ }
+ header nav ul {
+     display: block;
+ };
+ 
+ 
+ .menuburguer
+ {
+     display: inline;
+     width: 1px;
+ }
+ 
+ .fotohome 
+ {
+     
+     display: none;
+     
+ }
+ .logo
+ {
+     height: 5rem;
+     margin-left: 45%;
+     margin-bottom: 1rem;
+ }
+ 
+ }
+*/
+    /*Estilo de page Historia.html*/
+
+.h1historia
+    {
+    margin: 20px;
+    text-align: center;
+    text-decoration: underline;
+    }
+.columnahistoria
+    {
+     
+     border: solid 1px rgba(37, 10, 39, 0.644);
+     background-color:#DED9E9;
+     margin: 10px 40px;
+     columns: 1px 2;
+     column-gap: 3em;
+     column-rule: 1.5px solid rgba(37, 10, 39, 0.644);
+     column-width: 1px;
+     font-size: 20px;
+     padding: 10px;
+     }
+
+.imagenhistoria
+    {
+text-align: center;
+    }
+
+       
+/*ajustamos el tamaño de las imágenes*/
+
+.fotobodegavieja
+    {
+    width: 400px;
+    }
+
+.fototanques
+    {
+    width: 250px;
+    }
+  
+ /*estilo de página Nuestrosvinos.html*/
+
+
+.h2nuestrosvinos
+    {
+        margin: 20px;
+        text-align: center;
+        text-decoration: underline;
+    }
+    
+    .cuerpovinos{
+        display: flex;
+        flex-direction: column;
+        
+        text-align: center;
+        }
+
+
+.theadnuestrosvinos
+    {
+        font-weight: bold;
+        font-size: 25px;
+    }
+.color
+    {
+    background-color:rgb(248, 241, 241);
+    }
+    
+.imagenbotellas
+    {
+        
+        width: 50%;
+        margin-top: 10px;
+        margin-left:25%;
+        
+    }
+
+/* Estilo página Premios.html*/
+.h2premios
+
+    {
+        margin: 20px;
+        text-align: center;
+        text-decoration: underline;
+    }   
+
+.tablapremios
+    {
+     width: 50%;
+     border: solid 10px  rgba(37, 10, 39, 0.644);
+     border-spacing: 5px;
+     text-align: center;
+     padding: 15px;
+     border-collapse: collapse;
+     line-height: 25px;
+     margin-top: 10px;
+     margin-left: 25%;
+    }
+   
+.color2
+    {
+    background-color:rgb(248, 241, 241);
+    }
+.h3video
+    {
+        text-align: center;
+        text-decoration: underline;
+    }   
+.videopremios
+{
+    text-align: center;
+    margin:  1.5rem;
+    
+}
+/*Estilo página Contact.html*/
+    
+.h2contacto
+    {
+            margin: 20px;
+            text-align: center;
+            text-decoration: underline;
+    }
+    
+.contactoinfo
+{
+    color: rgb(7, 5, 7);
+    font-size: 1rem;
+    font-weight: bold; 
+    text-align: center;
+    line-height: 30px;
+    padding-left: 30px;
+    text-decoration: none;
+    
+}
+a.emailcontacto
+{
+    text-decoration: none;
+    color: rgb(7, 5, 7);
+}
+
+.contactoinfo2
+{
+    color: rgb(7, 5, 7);
+    font-size: 1rem;
+    font-weight: bold; 
+    text-align: center;
+    line-height: 30px;
+    margin-left: 30px;
+    text-decoration: none;
+    border: dotted 2px  rgba(37, 10, 39, 0.644);
+  }
+
+ /*Estilo formulario contacto*/
+ /*La idea sería mejorarlo con flexbox o gribs pero para el desafío no se podía usar*/
+
+
+ .Contactanos {
+    text-align: center;
+    font-size: 3em;
+}
+
+.contact-wrapper {
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+}
+
+.contact-wrapper > * {
+    padding: 1em;
+}
+
+.contact-form {
+    border: solid #41105e;
+}
+
+.contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-form form label {
+    display: block;
+}
+
+.contact-form form p {
+    margin: 0;
+    padding: 1em;
+}
+
+.contact-form form .block {
+    grid-column: 1 / 3;
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: rgb(12, 1, 1);
+    border-bottom: 3px solid #c830d6;
+}
+
+.contact-form form button {
+    background: rgb(128, 30, 128);
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+    background: #9930d6;
+    color: rgb(151, 55, 146);
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+/* CONTACT INFO */
+.contact-info {
+    background: rgb(170, 123, 156);
+}
+
+.contact-info h4, .contact-info ul, .contact-info p {
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+/* responsive */
+
+@media(min-width: 700px) {
+    body {
+        padding: 0 4em;
+    }
+
+   
+
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .contact-wrapper > * {
+        padding: 2em;
+    }
+    .contact-info h4,
+    .contact-info ul,
+    .contact-info p {
+        text-align: left;
+    }
+}
+
+
+/*AQUI el cambio de screen*/
+@media (max-width: 775px) {
+
+    
+    .logo{
+        display: none;
+    }
+    .menuburger{
+        display:block;
+        margin-left:10px;
+     }
+   
+     .menu{
+         display:none;
+         flex-direction: column;
+         justify-content:flex-start;
+         
+     }
+    
+     li{
+     
+         width: 50%;
+     }
+     
+     #menub:checked  ~ .menu
+      {
+         display:flex;
+      }
+
+     .imagenes{
+         flex-direction: columns;
+         justify-content: center;
+     }
+
+    
+
+    
+   
+ }

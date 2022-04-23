@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contacto - Bodegas Flores</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="icon" href="../Imágenes/favicon/Favicon Grape.png" type="image/png">
+    <link rel="stylesheet" href="../CSS/style.css">
+    
+</head>
+<body>
+    <header>
+        <img class="fotohome" src="../Imágenes/Fotos/Viñedo Home.jpg" alt="viñedo.jpg">
+        <nav>
+
+            <input type="checkbox" id="menub">
+            <label class="menuburger" for="menub"> ☰ </label> 
+            <ul class="menu">
+                 <li> <a href="..//index.html"><img class="logo" src="..//Imágenes/Fotos/Bodega flores Logo.png" alt="logobodega.jpg"></a></li>
+                 <li><a href="..//Pages/historia.html">Historia</a></li>
+                 <li><a href="..//Pages/nuestros vinos.html">Nuestros Vinos</a></li>
+                 <li><a href="..//Pages/premios.html">Premios</a></li>
+                 <li class="contacto"><a href="..//Pages/contacto.html">Contacto</a></li>
+            </ul> 
+        </nav>
+    </header>
+    
+    
+<section class="mb-4">
+    <h2 class="h1-responsive font-weight-bold text-center my-4">Contáctanos</h2>
+    <p class="text-center w-responsive mx-auto mb-5">Deje su mensaje nos contactaremos a la brevedad</p>
+    <div class="row">
+        <div class="col-md-9 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">Nombre y Apellido</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Email</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <input type="text" id="subject" name="subject" class="form-control">
+                            <label for="subject" class="">Asunto</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                     <div class="col-md-12">
+                        <div class="md-form">
+                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                            <label for="message">Mensaje</label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <div class="text-center text-md-left">
+                <button type="submit" class="btn btn-success"> <a onclick="document.getElementById('contact-form').submit();">Enviar</a></button>
+            </div>
+            <div class="status"></div>
+        </div>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" name="updates" id="updates" value="1">
+            <label for="updates" class="form-check-label">Estoy de acuerdo a recibir novedades y ofertas a mi email</label>
+          </div>
+      
+        
+
+</section>
+<section>
+                <ul>
+                    <h3 class="display -1" >Sobre Nosotros</h3>
+                    <li class=" list-unstyled">Estamos abiertos 365 días del año</li>
+                    <li class=" list-unstyled"><i class="sobrenosotrostel"></i> Teléfono:54 261 5 55555</li>
+                    <li class=" list-unstyled"><i class="sobrenosotrosemail"></i>Email:<span> <a class="emailcontacto" href="flores@bodega.com.ar">flores@bodega.com.ar</a></li>
+                    <li class=" list-unstyled"><i class="sobrenosotrosdire"></i> Dirección: Rodriguez Peña 500 Maipú Mendoza</li>
+                    <li class=" list-unstyled"><a class="sobrenosotrosmapa" href="https://goo.gl/maps/jUQ7rUrk8BVTybVS6"target:_blank>Mostrar dirección en GoogleMaps</a></li>
+                </ul>
+                
+            </div>
+        </div>
+
+    </div>
+</section>
+    <footer class="homefooter"> 
+        <a class="linkhome" href="../index.html">Link Home</a>
+        <h4 class="blockquote text-center">Bodega Flores S.A. - Lujan de Cuyo - Mendoza - Argentina</h4>
+        <p class="text-light">2022 - TODOS LOS DERECHOS RESERVADOS </p>
+    <footer>
+ <!-- bootstrap  script-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+</html>
