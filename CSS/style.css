@@ -243,14 +243,11 @@ text-align: center;
     background-color:rgb(248, 241, 241);
     }
     
-.imagenbotellas
-    {
-        
-        width: 50%;
-        margin-top: 10px;
-        margin-left:25%;
-        
-    }
+#botellanuestrosvinos
+{
+    width: 10rem;
+}
+
 
 /* Estilo página Premios.html*/
 .h2premios
