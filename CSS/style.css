@@ -18,7 +18,7 @@ html{
 
 body 
 {
-   background-image: linear-gradient(to right, rgb(56, 42, 54),rgb(216, 174, 216));
+   background-image: linear-gradient(to right, rgb(116, 102, 102),rgb(155, 97, 133));
 
 }
 
@@ -294,170 +294,33 @@ text-align: center;
             text-align: center;
             text-decoration: underline;
     }
+
+.form-check
+{
+    margin-left: 2rem;
+    margin-top: 1rem;
+    font-weight: bold;
     
-.contactoinfo
+}
+
+
+.sobrenosotros
 {
     color: rgb(7, 5, 7);
-    font-size: 1rem;
-    font-weight: bold; 
-    text-align: center;
-    line-height: 30px;
+    font-size: 0.9rem;
     padding-left: 30px;
     text-decoration: none;
-    
 }
-a.emailcontacto
+#lisobrenosotros
 {
-    text-decoration: none;
-    color: rgb(7, 5, 7);
-}
-
-.contactoinfo2
-{
-    color: rgb(7, 5, 7);
+    font-style: italic;
     font-size: 1rem;
-    font-weight: bold; 
-    text-align: center;
-    line-height: 30px;
-    margin-left: 30px;
-    text-decoration: none;
-    border: dotted 2px  rgba(37, 10, 39, 0.644);
-  }
 
- /*Estilo formulario contacto*/
- 
- .Contactanos {
-    text-align: center;
-    font-size: 3em;
 }
-
-.contact-wrapper {
-    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
-}
-
-.contact-wrapper > * {
-    padding: 1em;
-}
-
-.contact-form {
-    border: solid #41105e;
-}
-
-.contact-form form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.contact-form form label {
-    display: block;
-}
-
-.contact-form form p {
-    margin: 0;
-    padding: 1em;
-}
-
-.contact-form form .block {
-    grid-column: 1 / 3;
-}
-
-.contact-form form button,
-.contact-form form input,
-.contact-form form textarea {
-    width: 100%;
-    padding: .7em;
-    border: none;
-    background: none;
-    outline: 0;
-    color: rgb(12, 1, 1);
-    border-bottom: 3px solid #c830d6;
-}
-
-.contact-form form button {
-    background: rgb(128, 30, 128);
-    border: 0;
-    text-transform: uppercase;
-    padding: 1em;
-}
-
-.contact-form form button:hover,
-.contact-form form button:focus {
-    background: #9930d6;
-    color: rgb(151, 55, 146);
-    transition: background-color 1s ease-out;
-    outline: 0;
-}
-
-/* CONTACT INFO */
-.contact-info {
-    background: rgb(170, 123, 156);
-}
-
-.contact-info h4, .contact-info ul, .contact-info p {
-    text-align: center;
-    margin: 0 0 1rem 0;
-}
-
-/* responsive */
-
-@media(min-width: 700px) {
-    body {
-        padding: 0 4em;
-    }
-
-   
-
-    .contact-wrapper {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-    }
-    .contact-wrapper > * {
-        padding: 2em;
-    }
-    .contact-info h4,
-    .contact-info ul,
-    .contact-info p {
-        text-align: left;
-    }
-}
-
-
-/*AQUI el cambio de screen*/
-@media (max-width: 775px) {
-
+.sobrenosotrosmapa
+{
     
-    .logo{
-        display: none;
-    }
-    .menuburger{
-        display:block;
-        margin-left:10px;
-     }
-   
-     .menu{
-         display:none;
-         flex-direction: column;
-         justify-content:flex-start;
-         
-     }
-    
-     li{
-     
-         width: 50%;
-     }
-     
-     #menub:checked  ~ .menu
-      {
-         display:flex;
-      }
-
-     .imagenes{
-         flex-direction: columns;
-         justify-content: center;
-     }
-
-    
-
-    
-   
- }
+    color: rgb(7, 5, 7);
+    font-weight: bold;
+    font-style: italic;
+}
