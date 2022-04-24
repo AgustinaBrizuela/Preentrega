@@ -197,24 +197,7 @@ animation-duration: 5s;
      padding: 10px;
      }
 
-.imagenhistoria
-    {
-text-align: center;
-    }
-
-       
-/*ajustamos el tamaño de las imágenes*/
-
-.fotobodegavieja
-    {
-    width: 400px;
-    }
-
-.fototanques
-    {
-    width: 250px;
-    }
-  
+ 
  /*estilo de página Nuestrosvinos.html*/
 
 
@@ -225,19 +208,7 @@ text-align: center;
         text-decoration: underline;
     }
     
-    .cuerpovinos{
-        display: flex;
-        flex-direction: column;
-        
-        text-align: center;
-        }
-
-
-.theadnuestrosvinos
-    {
-        font-weight: bold;
-        font-size: 25px;
-    }
+   
 .color
     {
     background-color:rgb(248, 241, 241);
@@ -288,21 +259,27 @@ text-align: center;
 }
 /*Estilo página Contact.html*/
     
+.mb-4
+{
+    padding: 1rem;
+}
 .h2contacto
     {
             margin: 20px;
             text-align: center;
             text-decoration: underline;
     }
+#pcontacto
+    {
+     font-weight: bold;
+    }
 
 .form-check
 {
     margin-left: 2rem;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     font-weight: bold;
-    
 }
-
 
 .sobrenosotros
 {
@@ -319,7 +296,6 @@ text-align: center;
 }
 .sobrenosotrosmapa
 {
-    
     color: rgb(7, 5, 7);
     font-weight: bold;
     font-style: italic;
